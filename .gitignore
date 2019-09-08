@@ -1,0 +1,7 @@
+Section1_APP_A/.gradle
+Section1_APP_A/.idea
+Section1_APP_A/app/build
+Section1_APP_B/.gradle
+Section1_APP_B/.idea
+Section1_APP_B/app/build
+Section1_APP_B/app/libs/include/openssl

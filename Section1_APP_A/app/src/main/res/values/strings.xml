@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sec1_A</string>
+    <string name="Hint_text">Write something here...</string>
+    <string name="button_text">Get Eco</string>
+</resources>
