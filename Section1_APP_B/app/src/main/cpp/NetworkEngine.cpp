@@ -37,13 +37,12 @@ void NetworkEngine::addNewRequest(const std::string &url, int expireTime, Networ
 
     curl=curl_easy_init();
 
-    curl_easy_setopt(curl, CURLOPT_URL, "http://jsonplaceholder.typicode.com/posts/1");
+    curl_easy_setopt(curl, CURLOPT_URL, "https://postman-echo.com/post");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &writeCallback);
 
-    curl_easy_perform(curl);
 
-    curl_easy_cleanup(curl);
-    curl_easy_setopt(curl, CURLOPT_PROXY, "pun-net-mwg.ubisoft.org:3128");
+    curl_easy_setopt(curl, CURLOPT_PROXY, "http://pun-net-mwg.ubisoft.org:3128");
+    CURLcode log = curl_easy_perform(curl);
     curl_global_cleanup();
 
 }

@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver
+            android:name=".RequestReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.assignment.vishalphadtare.section1_app_b" />
+            </intent-filter>
+        </receiver>
         <service
             android:name=".MyIntentService"
             android:exported="false"></service>
