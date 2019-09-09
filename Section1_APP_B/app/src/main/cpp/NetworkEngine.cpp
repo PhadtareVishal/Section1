@@ -43,6 +43,7 @@ void NetworkEngine::addNewRequest(const std::string &url, int expireTime, Networ
     curl_easy_perform(curl);
 
     curl_easy_cleanup(curl);
+    curl_easy_setopt(curl, CURLOPT_PROXY, "pun-net-mwg.ubisoft.org:3128");
     curl_global_cleanup();
 
 }
